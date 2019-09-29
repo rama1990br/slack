@@ -1,15 +1,21 @@
 <section class="channels">
-		<h2>Groups</h2>
-		<ul>
-			{{#each groups as |group|}}
-			 <li>{{group.channelName}}</li>
-			{{/each}}
-	 	</ul>
+  <h2>Groups</h2>
+  <ul>
+    {{#each groups as |group|}}
+    <li>
+      <button {{action changeChannel group.channelName}}>
+        {{group.channelName}}
+      </button>
+    </li>
+    {{/each}}
+  </ul>
 
-	 	<h2>Individuals</h2>
-		<ul>
-			{{#each individuals as |individual|}}
-			 <li>{{individual.channelName}}</li>
-			{{/each}}
-	 	</ul>
-	</section>
+  <h2>Individuals</h2>
+  <ul>
+    {{#each individuals as |individual|}}
+      <LinkTo @route="channels.me">
+        {{individual.channelName}}
+      </LinkTo>
+    {{/each}}
+  </ul>
+</section>

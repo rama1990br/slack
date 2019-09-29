@@ -1,7 +1,9 @@
 <div class="container">
-	{{channel-list channels=channelNames}}
+  {{channel-list channels=channelNames changeChannel=(action "changeChannel")}}
 
-	{{message-list messages=messages}}
+  {{message-list messages=messages}}
 
-	{{current-channel-details currentChannel=currentChannel}}
+  {{current-channel-details currentChannel=currentChannel}}
+
+  {{outlet}}
 </div>

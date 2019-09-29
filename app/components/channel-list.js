@@ -7,9 +7,9 @@ export default Component.extend({
   groups: null,
 
   init(args)  {
-  	this._super(args);
-  	this.channels = args.channels;
-  	this.individuals = this.channels.filter(channel => channel.type == "individual");
-  	this.groups = this.channels.filter(channel => channel.type == "group");
+    this._super(args);
+    this.channels = args.channels;
+    this.individuals = this.channels.filter(channel => channel.type == "individual");
+    this.groups = this.channels.filter(channel => channel.type == "group");
   },
 });
