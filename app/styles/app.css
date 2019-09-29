@@ -1,0 +1,13 @@
+li {
+	list-style-type: none ; 
+}
+
+.container {
+	display: flex;
+	flex-direction: horizontal;
+} 
+.channels, .messages, .details {
+		flex-grow: 1;
+		border: 1px solid lightblue;
+	}
+

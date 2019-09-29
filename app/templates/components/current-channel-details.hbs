@@ -1,0 +1,18 @@
+<section class="details">
+	   <div class="channel-description">
+	   		<h2>Description</h2>
+	   		<p>{{currentChannel.description}}</p>
+	   </div>
+	   <div class="channel-highlights">
+	   		<h2>Highlights</h2>
+	   		<p>{{currentChannel.highlights}}</p>
+	   </div>
+	   <div class="pinned-items">
+	   		<h2>Pinned items</h2>
+	       <ul>
+	     	{{#each currentChannel.pinnedItems as |item|}}
+	     	  <li>{{item}}</li>
+	     	{{/each}}
+			</ul>
+		</div>
+	</section>
